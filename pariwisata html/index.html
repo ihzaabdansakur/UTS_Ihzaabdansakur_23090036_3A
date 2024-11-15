@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Bali</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">Pariwisata ID</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to <span>Indonesian</span></h1>
+            <div class="text-animate">
+                <h3>Explore the Beauty of Bali</h3>
+            </div>
+            <p>Temukan kekayaan budaya, pemandangan indah, dan surga tropis yang ditawarkan Indonesia. 
+                Dari pegunungan hingga pantai, jelajahi beragam keajaiban nusantara.</p>
+
+            <div class="btn-box">
+                <a href="#about" class="btn">Learn More</a>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Us</span></h2>
+        <div class="about-content">
+            <p>Bali, pulau dewata yang terletak di Indonesia, merupakan destinasi wisata terkenal yang menawarkan keindahan alam, budaya, 
+                dan pengalaman unik yang tidak terlupakan. Dikenal dengan pantainya yang mempesona, Bali juga kaya akan kekayaan budaya dan sejarah yang diabadikan dalam kuil-kuil bersejarah, tarian tradisional, 
+                dan seni ukir yang memukau. Selain itu, Bali memiliki beragam aktivitas untuk pengunjung, mulai dari menikmati matahari terbenam di pantai, hingga mera!</p>
+        </div>
+    </section>
+    
+    <!-- Tourist Destinations Section -->
+    <section class="tourist-destinations" id="destinations">
+        <h2 class="heading">Top Tourist <span>Destinations</span></h2>
+        <div class="destinations-content">
+            <div class="destination">
+                <img src='C:\Users\USER\Downloads\gambar 1.webp' alt="Besakih Temple">
+                <h3>Pura Besakih</h3>
+                <p>Kunjungi Pura Ibu Bali, yang terletak di Gunung Agung yang megah. Rasakan ritual sakralnya dan nikmati pemandangan pulau yang indah.</p>
+                <p class="price">Ticket Price: IDR 50,000</p>
+            </div>
+            <div class="destination">
+                <img src="C:\Users\USER\Downloads\monyet.avif" alt="Ubud Monkey Forest">
+                <h3>Hutan Monyet Ubud</h3>
+                <p>Temukan hutan hijau subur dan reruntuhan kuil kuno sambil bertemu dengan monyet nakal yang menghuni hutan.</p>
+                <p class="price">Ticket Price: IDR 80,000</p>
+            </div>
+            <div class="destination">
+                <img src="C:\Users\USER\Downloads\23456.webp" alt="Tirta Gangga">
+                <h3>Tirta Gangga</h3>
+                <p>Jelajahi taman air kerajaan yang indah dengan tanaman hijau subur dan kolam yang tenang, cocok untuk liburan yang damai.</p>
+                <p class="price">Ticket Price: IDR 40,000</p>
+            </div>
+            <div class="destination">
+                <img src="C:\Users\USER\Downloads\9093.jpg" alt="Nusa Dua Beach">
+                <h3>Pantai Nusa Dua</h3>
+                <p>Bersantailah di salah satu pantai paling tenang di Bali, terkenal dengan pasir putih dan airnya yang jernih, 
+                    ideal untuk olahraga air dan aktivitas pantai.</p>
+                <p class="price">Ticket Price: Free</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="content" id="contact">
+        <h2 class="heading">Contact <span>Us</span></h2>
+        <div class="contact-form">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required id="name">
+                <input type="email" placeholder="Your Email" required id="email">
+                <textarea placeholder="Your Message" required id="message"></textarea>
+                <button type="submit" class="btn" id="send-btn">Send Message</button>
+            </form>
+            <p id="response-message"></p> <!-- Tempat untuk menampilkan pesan -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

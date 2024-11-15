@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #333;
+    --main-color: #ff6347;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #baec05;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: #0571fd;
+    margin-left: 2rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    color: #003cff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/indonesia.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #07b7fd;
+    padding: 0 10%;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.home-content h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+}
+
+.btn-box {
+    margin-top: 2rem;
+}
+
+.btn-box .btn {
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0.5rem;
+    transition: background 0.3s;
+}
+
+.btn-box .btn:hover {
+    background: #e55347;
+}
+
+/* About Section */
+.about {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.about .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Tourist Destinations Section */
+.tourist-destinations {
+    padding: 5rem 10%;
+    background: #f0f4f8;
+    text-align: center;
+}
+
+.tourist-destinations .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.destinations-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.destination {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.destination h3 {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.destination p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+/* Contact Section */
+.content {
+    padding: 5rem 10%;
+    text-align: center;
+}
+
+.content .heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e55347;
+}
+
+#response-message {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: green;
+}
+
+/* Agar scroll menjadi lebih halus */
+html {
+    scroll-behavior: smooth;
+}
